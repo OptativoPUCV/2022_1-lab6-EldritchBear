@@ -249,3 +249,14 @@ Thu May 12 17:39:41 UTC 2022:
  tests:  6|2
 total_score: 45/70
 8e63397
+Thu May 12 17:43:51 UTC 2022: 
+ sudoku.c | 9 ++++++++-
+ 1 file changed, 8 insertions(+), 1 deletion(-)
+In file included from test.c:5:0:
+sudoku.c: In function ‘is_final’:
+sudoku.c:125:7: error: unused variable ‘flag’ [-Werror=unused-variable]
+   int flag;
+       ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+82b23e6
