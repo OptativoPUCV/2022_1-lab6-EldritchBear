@@ -162,3 +162,9 @@ sudoku.c:85:18: error: expected expression before ‘Node’
                   ^~~~
 Compilation failed
 dac2362
+Thu May 12 17:30:06 UTC 2022: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  5|3
+total_score: 35/70
+9da2fb4
