@@ -135,6 +135,7 @@ Node* DFS(Node* initial, int* cont){
   push(s,initial);
   int a = 1;
   while(a != 0){
+    cont++;
     Node *n = top(s);
     pop(s);
     if(is_final(n))return n;
