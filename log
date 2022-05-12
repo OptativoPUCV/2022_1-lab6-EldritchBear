@@ -121,3 +121,22 @@ sudoku.c:83:9: error: variable ‘i’ set but not used [-Werror=unused-but-set-
 cc1: all warnings being treated as errors
 Compilation failed
 3861108
+Thu May 12 17:29:15 UTC 2022: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:85:18: error: ‘node’ undeclared (first use in this function); did you mean ‘Node’?
+     printf("%d ",node->sudo[i][j]);
+                  ^~~~
+                  Node
+sudoku.c:85:18: note: each undeclared identifier is reported only once for each function it appears in
+sudoku.c:84:9: error: variable ‘j’ set but not used [-Werror=unused-but-set-variable]
+     int j=3*(k%3) + (p%3) ;
+         ^
+sudoku.c:83:9: error: variable ‘i’ set but not used [-Werror=unused-but-set-variable]
+     int i=3*(k/3) + (p/3) ;
+         ^
+cc1: all warnings being treated as errors
+Compilation failed
+88fd118
