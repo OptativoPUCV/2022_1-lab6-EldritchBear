@@ -59,3 +59,9 @@ Thu May 12 17:20:18 UTC 2022:
  tests:  3|4
 total_score: 20/70
 f71dfb2
+Thu May 12 17:22:02 UTC 2022: 
+ sudoku.c | 10 +++++++---
+ 1 file changed, 7 insertions(+), 3 deletions(-)
+ tests:  4|4
+total_score: 25/70
+d0bfd7e

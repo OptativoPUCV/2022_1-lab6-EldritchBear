@@ -47,14 +47,18 @@ int is_valid(Node* n){
   int i,j,k;
   int aux;
   int *arreglo = (int*) calloc(10,sizeof(int));
-  for(i = 0; i < 9; i++){
-    if(n->sudo[i][0] != 0){
-      aux = n->sudo[i][0];
-      arreglo[aux]++;
-      if (arreglo[aux] > 1)return 0;
+  for(j = 0 ; j < 9 ; j++){
+    for(i = 0; i < 9; i++){
+      if(n->sudo[i][j] != 0){
+        aux = n->sudo[i][j];
+        arreglo[aux]++;
+        if (arreglo[aux] > 1)return 0;
+      }
+    }
+    for(k = 0; k < 10;k++){
+      arreglo[k] = 0;
     }
   }
-
   for(k = 0; k < 10;k++){
     arreglo[k] = 0;
   }
