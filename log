@@ -439,3 +439,14 @@ sudoku.c:138:15: error: void value not ignored as it ought to be
                ^~~
 Compilation failed
 b881ca5
+Thu May 12 19:09:15 UTC 2022: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+sudoku.c: In function ‘DFS’:
+sudoku.c:139:17: error: ‘n’ undeclared (first use in this function)
+     if(is_final(n))return n;
+                 ^
+sudoku.c:139:17: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+00e462a
