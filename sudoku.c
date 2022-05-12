@@ -85,7 +85,7 @@ int is_valid(Node* n){
     i=3*(k/3) + (p/3) ;
     j=3*(k%3) + (p%3) ;
     if(n->sudo[i][j] != 0){
-      aux = arreglo[i][j];
+      aux = arreglo[i];
       arreglo[aux]++;
       if(arreglo[aux] > 1)return 0;
     }
