@@ -350,3 +350,16 @@ sudoku.c:138:15: error: void value not ignored as it ought to be
                ^~~
 Compilation failed
 7ea476c
+Thu May 12 18:07:47 UTC 2022: 
+ sudoku.c | 4 +---
+ 1 file changed, 1 insertion(+), 3 deletions(-)
+In file included from test.c:5:0:
+sudoku.c: In function ‘DFS’:
+sudoku.c:136:10: error: dereferencing pointer to incomplete type ‘Stack {aka struct List}’
+   while(s->size != 0){
+          ^~
+sudoku.c:137:15: error: void value not ignored as it ought to be
+     Node *n = pop(s);
+               ^~~
+Compilation failed
+3ead70a
