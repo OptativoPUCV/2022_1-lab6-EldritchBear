@@ -1,0 +1,12 @@
+Thu May 12 15:23:51 UTC 2022: 
+ sudoku.c | 16 ++++++++++++++++
+ 1 file changed, 16 insertions(+)
+In file included from test.c:5:0:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:62:22: error: ‘lista’ undeclared (first use in this function); did you mean ‘list’?
+             pushBack(lista,adj);
+                      ^~~~~
+                      list
+sudoku.c:62:22: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+dcac471
