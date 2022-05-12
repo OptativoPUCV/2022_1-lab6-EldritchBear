@@ -16,3 +16,17 @@ Thu May 12 15:24:00 UTC 2022:
  tests:  2|4
 total_score: 15/70
 d3bdc77
+Thu May 12 15:51:50 UTC 2022: 
+ sudoku.c | 11 ++++++++++-
+ 1 file changed, 10 insertions(+), 1 deletion(-)
+In file included from test.c:5:0:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:47:11: error: unused variable ‘k’ [-Werror=unused-variable]
+   int i,j,k;
+           ^
+sudoku.c:47:9: error: unused variable ‘j’ [-Werror=unused-variable]
+   int i,j,k;
+         ^
+cc1: all warnings being treated as errors
+Compilation failed
+67d5430
