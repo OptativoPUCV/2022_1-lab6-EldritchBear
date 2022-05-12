@@ -336,3 +336,17 @@ sudoku.c:138:15: error: void value not ignored as it ought to be
                ^~~
 Compilation failed
 8f8f963
+Thu May 12 18:07:33 UTC 2022: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+sudoku.c: In function ‘DFS’:
+sudoku.c:136:15: error: ‘s’ is a pointer; did you mean to use ‘->’?
+   int size = s.size;
+               ^
+               ->
+sudoku.c:138:15: error: void value not ignored as it ought to be
+     Node *n = pop(s);
+               ^~~
+Compilation failed
+7ea476c

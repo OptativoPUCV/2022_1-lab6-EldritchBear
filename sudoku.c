@@ -133,7 +133,7 @@ int is_final(Node* n){
 Node* DFS(Node* initial, int* cont){
   Stack* s = createStack();
   push(s,initial);
-  int size = s->size;
+  int size = s.size;
   while(size != 0){
     Node *n = pop(s);
     size--;
