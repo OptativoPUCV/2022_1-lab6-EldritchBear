@@ -283,3 +283,17 @@ sudoku.c:140:5: error: unknown type name ‘node’; did you mean ‘Node’?
      Node
 Compilation failed
 47d5e8c
+Thu May 12 18:04:13 UTC 2022: 
+ sudoku.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+sudoku.c: In function ‘DFS’:
+sudoku.c:136:10: error: ‘S’ is a pointer; did you mean to use ‘->’?
+   while(S.size != 0){
+          ^
+          ->
+sudoku.c:137:15: error: void value not ignored as it ought to be
+     Node *n = pop(S);
+               ^~~
+Compilation failed
+358bb61
