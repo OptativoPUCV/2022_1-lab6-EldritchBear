@@ -363,3 +363,26 @@ sudoku.c:137:15: error: void value not ignored as it ought to be
                ^~~
 Compilation failed
 3ead70a
+Thu May 12 18:11:40 UTC 2022: 
+ sudoku.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:5:0:
+sudoku.c: In function ‘DFS’:
+sudoku.c:135:8: error: implicit declaration of function ‘size’ [-Werror=implicit-function-declaration]
+   push(size(s),initial);
+        ^~~~
+sudoku.c:135:8: error: passing argument 1 of ‘push’ makes pointer from integer without a cast [-Werror=int-conversion]
+In file included from test.c:4:0:
+list.h:33:6: note: expected ‘Stack * {aka struct List *}’ but argument is of type ‘int’
+ void push(Stack* s, void* data);
+      ^~~~
+In file included from test.c:5:0:
+sudoku.c:136:10: error: dereferencing pointer to incomplete type ‘Stack {aka struct List}’
+   while(s->size != 0){
+          ^~
+sudoku.c:137:15: error: void value not ignored as it ought to be
+     Node *n = pop(s);
+               ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+a81a949
