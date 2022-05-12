@@ -49,3 +49,9 @@ sudoku.c:49:8: note: previous definition of ‘arreglo’ was here
         ^~~~~~~
 Compilation failed
 154c2e6
+Thu May 12 15:54:24 UTC 2022: 
+ sudoku.c | 13 ++++++++-----
+ 1 file changed, 8 insertions(+), 5 deletions(-)
+ tests:  3|4
+total_score: 20/70
+e0f473c
