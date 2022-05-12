@@ -266,3 +266,20 @@ Thu May 12 17:44:00 UTC 2022:
  tests:  7|1
 total_score: 55/70
 26f4761
+Thu May 12 18:03:51 UTC 2022: 
+ sudoku.c | 12 ++++++++++++
+ 1 file changed, 12 insertions(+)
+In file included from test.c:5:0:
+sudoku.c: In function ‘DFS’:
+sudoku.c:136:10: error: dereferencing pointer to incomplete type ‘Stack {aka struct List}’
+   while(S->size != 0){
+          ^~
+sudoku.c:137:15: error: void value not ignored as it ought to be
+     Node *n = pop(S);
+               ^~~
+sudoku.c:140:5: error: unknown type name ‘node’; did you mean ‘Node’?
+     node* aux= first(adj);
+     ^~~~
+     Node
+Compilation failed
+47d5e8c
