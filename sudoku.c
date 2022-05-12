@@ -89,9 +89,9 @@ int is_valid(Node* n){
         arreglo[aux]++;
         if(arreglo[aux] > 1)return 0;
       }
-      for(k = 0; k < 10;k++){
-        arreglo[k] = 0;
-      }
+    }
+    for(k = 0; k < 10;k++){
+      arreglo[k] = 0;
     }
   }
   return 1;
